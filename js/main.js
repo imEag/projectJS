@@ -38,8 +38,6 @@ $(document).ready(() => {
         
     ]
 
-    console.log(posts)
-
     posts.forEach((item, index) => {
         let post = `
         <article class="content__posts__post">
@@ -52,9 +50,14 @@ $(document).ready(() => {
         </article>
         `;
 
-        console.log(post)
 
         $("#global__content__posts").append(post);
     });
 
+    /* Go up functionality */
+    $(".footer__go-up").click(() => {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 500);
+    });
 });

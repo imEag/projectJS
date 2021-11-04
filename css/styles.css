@@ -213,9 +213,11 @@ form input[type="submit"] {
     margin: 1rem 0;
 }
 
+/* --- FOOTER --- */
+
 footer {
     font-family: var(--font-main);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: white;
     height: 4.7rem;
     background: rgba(51, 51, 51, .7);
@@ -226,4 +228,18 @@ footer {
     margin-top: 5rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.footer__go-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .2rem;
+    cursor: pointer;
+}
+
+.footer__go-up--text {
+    text-decoration: none;
+    color: white;
 }
