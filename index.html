@@ -4,9 +4,25 @@
 <head>
     <meta charset="utf-8">
     <title>project JS</title>
-    <!-- CSS -->
+    <!-- Normalize -->
     <link rel="stylesheet" href="css/normalize.css">
+    
+    <!-- JQuery -->
+    <script src="js/jquery/jquery-3.6.0.min.js"></script>
+    
+    <!-- slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <!-- Moment JS -->
+    <script src="js/jquery/moment.js"></script>
+
+    <!-- styles -->
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- My JS -->
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -28,44 +44,23 @@
 
         <!-- SLIDER -->
         <div id="global__slider">
-
+            <div class="slider__bxslider">
+                <div><img src="img/hojas.jpg" title="Leaves"></div>
+                <div><img src="img/cielo.jpg" title="Sky"></div>
+                <div><img src="img/rojo.jpg" title="Red"></div>
+              </div>
         </div>
 
         <!-- Content -->
         <section id="global__content">
             <!-- Posts -->
             <div id="global__content__posts">
-                <article class="content__posts__post">
-                    <h2 class="post--title">Title</h2>
-                    <span class="post--date">posted in date</span>
-                    <p class="post--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, enim porro
-                        temporibus nihil
-                        commodi asperiores, nam dicta mollitia quam nostrum et ab, numquam repellendus? Repellat soluta
-                        laborum perferendis neque voluptatum.</p>
-                    <a href="#" class="btn post__btn--showmore">Read more</a>
-                </article>
-                <article class="content__posts__post">
-                    <h2 class="post--title">Title</h2>
-                    <span class="post--date">posted in date</span>
-                    <p class="post--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, enim porro
-                        temporibus nihil
-                        commodi asperiores, nam dicta mollitia quam nostrum et ab, numquam repellendus? Repellat soluta
-                        laborum perferendis neque voluptatum.</p>
-                    <a href="#" class="btn post__btn--showmore">Read more</a>
-                </article>
-                <article class="content__posts__post">
-                    <h2 class="post--title">Title</h2>
-                    <span class="post--date">posted in date</span>
-                    <p class="post--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, enim porro
-                        temporibus nihil
-                        commodi asperiores, nam dicta mollitia quam nostrum et ab, numquam repellendus? Repellat soluta
-                        laborum perferendis neque voluptatum.</p>
-                    <a href="#" class="btn post__btn--showmore">Read more</a>
-                </article>
+                
             </div>
 
             <!-- Sidebar -->
             <aside id="global__content__sidebar">
+                <!-- About -->
                 <div id="content__sidebar__about">
                     <h4 class="sidebar__about--title">¿Quién soy?</h4>
                     <img class="sidebar__about--img" src="img/caracol.jpg" alt="">
@@ -74,6 +69,7 @@
                         repellendus voluptatem vero amet explicabo fugiat dolore sapiente aperiam dicta. Sunt inventore
                         harum doloremque reprehenderit. Dolorem!</p>
                 </div>
+                <!-- Login -->
                 <div id="content__sidebar__login">
                     <h4 class="login--title"><span class="login--title--span">Log In</span></h4>
                     <form action="" class="login--form">

@@ -102,6 +102,12 @@ body {
     font-size: 1.8rem;
 }
 
+/* --- SLIDER --- */
+
+.bx-wrapper, .bx-viewport {
+    height: 25rem !important;
+}
+
 /* --- CONTENT --- */
 
 /* - posts - */
