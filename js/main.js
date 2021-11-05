@@ -60,4 +60,25 @@ $(document).ready(() => {
             scrollTop: 0
         }, 500);
     });
+
+    /* Fake Login */
+    $(".login__form").submit(() => {
+        let name = $("#login__form--name").val();
+        localStorage.setItem("form_name", name);
+    });
+
+    let form_name = localStorage.getItem("form_name");
+    if (form_name !== null && form_name !== "undefined") {
+        let about_text = $(".sidebar__about--text")
+        about_text.html("Welcome " + form_name);
+        about_text.append(`<a href="#" id="sidebar__about--logout">Log Out</a>`)
+
+        $("#login").hide();
+
+        $("#sidebar__about--logout").click(() => {
+            localStorage.clear();
+            location.reload()
+        });
+    }
+
 });

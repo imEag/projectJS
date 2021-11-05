@@ -191,11 +191,11 @@ body {
 
 /* --- LOGIN --- */
 
-#content__sidebar__login {
+#login {
     width: 100%;
 }
 
-.login--title {
+.login__title {
     font-size: 2.4rem;
     text-align: center;
 }
