@@ -9,18 +9,15 @@
 
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
+
     <!-- JQuery -->
     <script src="js/jquery/jquery-3.6.0.min.js"></script>
-    
-    <!-- slider -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    
-    <!-- Moment JS -->
-    <script src="js/jquery/moment.js"></script>
 
+    <!-- JQuery UI -->
+    <link rel="stylesheet" href="js/jquery/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery/jquery-ui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery/jquery-ui/jquery-ui.theme.min.css">
+    <script src="js/jquery/jquery-ui/jquery-ui.min.js"></script>
     <!-- styles -->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -45,20 +42,33 @@
             </nav>
         </header>
 
-        <!-- SLIDER -->
-        <div id="global__slider">
-            <div class="slider__bxslider">
-                <div><img src="img/hojas.jpg" title="Leaves"></div>
-                <div><img src="img/cielo.jpg" title="Sky"></div>
-                <div><img src="img/rojo.jpg" title="Red"></div>
-              </div>
-        </div>
-
         <!-- Content -->
         <section id="global__content">
             <!-- Posts -->
-            <div id="global__content__posts">
-                
+            <div id="global__content__box">
+                <div id="box__tabs">
+                    <h3>About us</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aperiam! Et temporibus ut
+                            soluta nam.
+                        </p>
+                    </div>
+                    <h3>Our costumers</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aperiam! Et temporibus ut
+                            soluta nam.
+                        </p>
+                    </div>
+                    <h3>Our services</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aperiam! Et temporibus ut
+                            soluta nam.
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <!-- Sidebar -->
@@ -73,13 +83,13 @@
                         harum doloremque reprehenderit. Dolorem!</p>
                 </div>
                 <!-- Login -->
-                <div id="content__sidebar__login">
-                    <h4 class="login--title"><span class="login--title--span">Log In</span></h4>
-                    <form action="" class="login--form">
+                <div id="login">
+                    <h4 class="login__title"><span class="login__title__span">Log In</span></h4>
+                    <form action="" class="login__form">
                         <label for="name">
                             Full Name
                         </label>
-                        <input type="text" name="name">
+                        <input type="text" name="name" id="login__form--name">
                         <label for="email">
                             Email
                         </label>

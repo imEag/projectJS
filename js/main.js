@@ -2,44 +2,50 @@
 
 $(document).ready(() => {
     /* Slider */
-    $('.slider__bxslider').bxSlider({
-        mode: 'fade',
-        captions: true,
-        slideWidth: 1200
-    });
+    if (window.location.href.indexOf('index') > -1) {
+        $('.slider__bxslider').bxSlider({
+            mode: 'fade',
+            captions: true,
+            slideWidth: 1200,
+            responsive: true
+        });
+    }
+
+
 
     /* Posts */
-    var posts = [
-        {
-            title: "Test Title 1",
-            date: "Posted on " + moment().format("MMMM") + " " + moment().format("DD") + ", " + moment().format("YYYY") + " at " + moment().format('LT'),
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, enim porro temporibus nihil commodi asperiores, nam dicta mollitia quam nostrum et ab, numquam repellendus? Repellat soluta laborum perferendis neque voluptatum"
-        },
-        {
-            title: "Test Title 2",
-            date: "Posted on " + moment().format("MMMM") + " " + moment().format("DD") + ", " + moment().format("YYYY") + " at " + moment().format('LT'),
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, enim porro temporibus nihil commodi asperiores, nam dicta mollitia quam nostrum et ab, numquam repellendus? Repellat soluta laborum perferendis neque voluptatum"
-        },
-        {
-            title: "Test Title 3",
-            date: "Posted on " + moment().format("MMMM") + " " + moment().format("DD") + ", " + moment().format("YYYY") + " at " + moment().format('LT'),
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, enim porro temporibus nihil commodi asperiores, nam dicta mollitia quam nostrum et ab, numquam repellendus? Repellat soluta laborum perferendis neque voluptatum"
-        },
-        {
-            title: "Test Title 4",
-            date: "Posted on " + moment().format("MMMM") + " " + moment().format("DD") + ", " + moment().format("YYYY") + " at " + moment().format('LT'),
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, enim porro temporibus nihil commodi asperiores, nam dicta mollitia quam nostrum et ab, numquam repellendus? Repellat soluta laborum perferendis neque voluptatum"
-        },
-        {
-            title: "Test Title 5",
-            date: "Posted on " + moment().format("MMMM") + " " + moment().format("DD") + ", " + moment().format("YYYY") + " at " + moment().format('LT'),
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, enim porro temporibus nihil commodi asperiores, nam dicta mollitia quam nostrum et ab, numquam repellendus? Repellat soluta laborum perferendis neque voluptatum"
-        },
-        
-    ]
+    if (window.location.href.indexOf('index') > -1) {
+        var posts = [
+            {
+                title: "Test Title 1",
+                date: "Posted on " + moment().format("MMMM") + " " + moment().format("DD") + ", " + moment().format("YYYY") + " at " + moment().format('LT'),
+                content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, enim porro temporibus nihil commodi asperiores, nam dicta mollitia quam nostrum et ab, numquam repellendus? Repellat soluta laborum perferendis neque voluptatum"
+            },
+            {
+                title: "Test Title 2",
+                date: "Posted on " + moment().format("MMMM") + " " + moment().format("DD") + ", " + moment().format("YYYY") + " at " + moment().format('LT'),
+                content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, enim porro temporibus nihil commodi asperiores, nam dicta mollitia quam nostrum et ab, numquam repellendus? Repellat soluta laborum perferendis neque voluptatum"
+            },
+            {
+                title: "Test Title 3",
+                date: "Posted on " + moment().format("MMMM") + " " + moment().format("DD") + ", " + moment().format("YYYY") + " at " + moment().format('LT'),
+                content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, enim porro temporibus nihil commodi asperiores, nam dicta mollitia quam nostrum et ab, numquam repellendus? Repellat soluta laborum perferendis neque voluptatum"
+            },
+            {
+                title: "Test Title 4",
+                date: "Posted on " + moment().format("MMMM") + " " + moment().format("DD") + ", " + moment().format("YYYY") + " at " + moment().format('LT'),
+                content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, enim porro temporibus nihil commodi asperiores, nam dicta mollitia quam nostrum et ab, numquam repellendus? Repellat soluta laborum perferendis neque voluptatum"
+            },
+            {
+                title: "Test Title 5",
+                date: "Posted on " + moment().format("MMMM") + " " + moment().format("DD") + ", " + moment().format("YYYY") + " at " + moment().format('LT'),
+                content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, enim porro temporibus nihil commodi asperiores, nam dicta mollitia quam nostrum et ab, numquam repellendus? Repellat soluta laborum perferendis neque voluptatum"
+            },
 
-    posts.forEach((item, index) => {
-        let post = `
+        ]
+
+        posts.forEach((item, index) => {
+            let post = `
         <article class="content__posts__post">
             <h2 class="post--title">${item.title}</h2>
             <span class="post--date">${item.date}</span>
@@ -51,8 +57,9 @@ $(document).ready(() => {
         `;
 
 
-        $("#global__content__posts").append(post);
-    });
+            $("#global__content__posts").append(post);
+        });
+    }
 
     /* Go up functionality */
     $(".footer__go-up").click(() => {
@@ -60,4 +67,9 @@ $(document).ready(() => {
             scrollTop: 0
         }, 500);
     });
+
+    if (window.location.href.indexOf('about') > -1) {
+        $("#box__tabs").accordion();
+    }
+
 });
