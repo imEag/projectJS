@@ -88,8 +88,20 @@ $(document).ready(() => {
         });
     }
 
+    /* About */
     if (window.location.href.indexOf('about') > -1) {
         $("#box__tabs").accordion();
     }
+
+    /* Clock */
+    if (window.location.href.indexOf('clock') > -1) {
+        let clock = moment().format('hh:mm:ss a');
+        $('#global__content__clock').html(clock);
+        setInterval(() => {
+            let clock = moment().format('hh:mm:ss a');
+            $('#global__content__clock').html(clock);
+        }, 1000);
+    }
+
 
 });

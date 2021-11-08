@@ -226,6 +226,18 @@ form input[type="submit"] {
     margin: 1rem 0;
 }
 
+/* --- CLOCK --- */
+#global__content__clock {
+    font-size: 6rem;
+    font-family: var(--font-main);
+    color: var(--dark-gray);
+    width: 60%;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* --- FOOTER --- */
 
 footer {
