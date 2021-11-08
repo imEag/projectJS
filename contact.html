@@ -18,10 +18,6 @@
     <link rel="stylesheet" href="js/jquery/jquery-ui/jquery-ui.structure.min.css">
     <link rel="stylesheet" href="js/jquery/jquery-ui/jquery-ui.theme.min.css">
     <script src="js/jquery/jquery-ui/jquery-ui.min.js"></script>
-
-    <!-- Moment JS -->
-    <script src="js/jquery/moment.js"></script>
-
     <!-- styles -->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -48,9 +44,33 @@
 
         <!-- Content -->
         <section id="global__content">
-            <!-- Clock -->
-            <div id="global__content__clock">
-                
+            <!-- Contact -->
+            <div id="global__content__contact">
+                <h2 id="contact__title">Contact me</h2>
+                <form action="" method="POST" id="contact__form">
+                    <label for="name">Name</label>
+                    <input type="text" name="name">
+                    
+                    <label for="lastname">Lastname</label>
+                    <input type="text" name="lastname">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="">
+                        <option value="men">Men</option>
+                        <option value="women">Women</option>
+                    </select>
+
+                    <label for="birthday">Birthday</label>
+                    <input type="text" name="birthday">
+
+                    <label for="age">Age</label>
+                    <input type="number" name="age">
+
+                    <input type="submit" value="Send" class="btn">
+                </form>
             </div>
 
             <!-- Sidebar -->
