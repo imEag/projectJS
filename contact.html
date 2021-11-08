@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="js/jquery/jquery-ui/jquery-ui.structure.min.css">
     <link rel="stylesheet" href="js/jquery/jquery-ui/jquery-ui.theme.min.css">
     <script src="js/jquery/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- Form validator -->
+    <script src="js/jquery/jquery.form-validator.min.js"></script>
+
     <!-- styles -->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -49,25 +53,25 @@
                 <h2 id="contact__title">Contact me</h2>
                 <form action="" method="POST" id="contact__form">
                     <label for="name">Name</label>
-                    <input type="text" name="name">
+                    <input type="text" name="name" data-validation="alphanumeric required">
                     
                     <label for="lastname">Lastname</label>
-                    <input type="text" name="lastname">
+                    <input type="text" name="lastname" data-validation="alphanumeric">
 
                     <label for="email">Email</label>
-                    <input type="email" name="email">
+                    <input type="email" name="email" data-validation="email required">
 
                     <label for="gender">Gender</label>
-                    <select name="gender" id="">
+                    <select name="gender" id="" data-validation="required">
                         <option value="men">Men</option>
                         <option value="women">Women</option>
                     </select>
 
-                    <label for="birthday">Birthday</label>
-                    <input type="text" name="birthday">
+                    <label for="date">Birthday</label>
+                    <input type="text" name="date" data-validation="date required" data-validation-format="mm/dd/yyyy" autocomplete="no">
 
                     <label for="age">Age</label>
-                    <input type="number" name="age">
+                    <input type="number" name="age" data-validation="number">
 
                     <input type="submit" value="Send" class="btn">
                 </form>

@@ -103,4 +103,14 @@ $(document).ready(() => {
         }, 1000);
     }
 
+    /* Contact Form Validation */
+    if (window.location.href.indexOf('contact') > -1) {
+        $('input[name="date"]').datepicker();
+
+        $.validate({lang: 'en'});
+
+        $('#contact__form input[type="submit"]').click(() => {
+        });
+    }
+
 });

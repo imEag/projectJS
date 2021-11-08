@@ -269,6 +269,15 @@ form input[type="submit"] {
     margin: .5rem 0;
 }
 
+.help-block {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: black;
+    background-color: #fd7a7a;
+    padding: 1rem 2rem;
+    margin: 0;
+}
+
 
 #contact__form input[type="submit"] {
     margin: 1rem 0;
