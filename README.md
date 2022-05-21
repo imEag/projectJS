@@ -13,8 +13,8 @@ Project JS is an static blog website where you can find a "home" page that conta
 
 ## Screenshots
 
-![App Screenshot]([https://i.ibb.co/ZNncS76/protfoliologo.png](https://i.ibb.co/dPrXJT8/personal-Blog.png))
-![App Screenshot]([[https://i.ibb.co/ZNncS76/protfoliologo.png](https://i.ibb.co/dPrXJT8/personal-Blog.png)](https://i.ibb.co/PGMxJwp/personalbloglogo.png))
+![App Screenshot](https://i.ibb.co/dPrXJT8/personal-Blog.png)
+![App Screenshot](https://i.ibb.co/PGMxJwp/personalbloglogo.png)
 
 
 ## License
