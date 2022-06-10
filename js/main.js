@@ -1,20 +1,21 @@
 'use strict'
 
+
+
 $(document).ready(() => {
     /* Slider */
-    if (window.location.href.indexOf('index') > -1) {
+    if (window.location.href.indexOf('') > -1 && window.location.href.indexOf('about') == -1 && window.location.href.indexOf('clock') == -1 && window.location.href.indexOf('contact') == -1) {
         $('.slider__bxslider').bxSlider({
             mode: 'fade',
             captions: true,
             slideWidth: 1200,
             responsive: true
         });
+
     }
 
-
-
     /* Posts */
-    if (window.location.href.indexOf('index') > -1) {
+    if (window.location.href.indexOf('') > -1 && window.location.href.indexOf('about') == -1 && window.location.href.indexOf('clock') == -1 && window.location.href.indexOf('contact') == -1) {
         var posts = [
             {
                 title: "Test Title 1",
